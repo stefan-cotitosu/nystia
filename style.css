@@ -5,3 +5,93 @@ Author: Anca Pantilie
 Template: hestia
 Version: 1.0.0
 */
+
+/* ===== Home ===== */
+
+/* Features */
+
+.home .hestia-features .hestia-title {
+    color: #999;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 24px;
+    padding-bottom: 10px;
+    margin: 0 0 10px;
+}
+
+.home .hestia-features .feature-box .icon {
+    display: inline-block;
+    background-color: goldenrod;
+    margin-bottom: 10px;
+    height: 64px;
+    width: 64px;
+    border-radius: 15px;
+    padding: 8px;
+}
+
+.home .hestia-features .feature-box .icon .fa {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 46px;
+    text-align: center;
+    color: white;
+}
+
+.home .hestia-features .feature-box .info-title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 17px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.home .hestia-features .feature-box .hestia-info,
+.home .hestia-features .description {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 10px;
+}
+
+/* Testimonials */
+
+.hestia-testimonials .text-center .hestia-title {
+    color: #999999;
+    font-size: 36px;
+    font-weight: 300;
+    padding-bottom: 10px;
+    line-height: 17px;
+}
+
+.hestia-testimonials .text-center .description {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 10px;
+}
+
+.hestia-testimonials .card-testimonial .card-avatar .img {
+    max-width: 75px;
+    max-height: 75px;
+    -webkit-box-shadow:none;
+}
+
+.hestia-testimonials .card-testimonial .card-avatar {
+    float: left;
+    /*margin-top: 16px;*/
+    margin-right: 4px;
+}
+
+.hestia-testimonials .card-testimonial .card-title {
+    display: -webkit-box;
+    margin-top: -25px;
+}
+.hestia-testimonials .card-testimonial .text-muted {
+    display: -webkit-box;
+    margin-top: -8px;
+}
+
+.hestia-testimonials .card-testimonial .card-description {
+    text-align: center;
+}
+
+
