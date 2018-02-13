@@ -37,6 +37,7 @@ add_action( 'customize_register', 'nystia_change_defaults', 99 );
 function nystia_font_default_frontend() {
     return 'Open Sans';
 }
+
 add_filter( 'hestia_headings_default', 'nystia_font_default_frontend' );
 add_filter( 'hestia_body_font_default', 'nystia_font_default_frontend' );
 

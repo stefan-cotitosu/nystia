@@ -53,14 +53,16 @@ Version: 1.0.0
     margin: 0 0 10px;
 }
 
+
+
 /* Testimonials */
 
 .hestia-testimonials .text-center .hestia-title {
-    color: #999999;
     font-size: 36px;
     font-weight: 300;
-    padding-bottom: 10px;
     line-height: 17px;
+    padding-bottom: 10px;
+    color: #999999;
 }
 
 .hestia-testimonials .text-center .description {
@@ -70,28 +72,94 @@ Version: 1.0.0
 }
 
 .hestia-testimonials .card-testimonial .card-avatar .img {
-    max-width: 75px;
-    max-height: 75px;
+    position: relative;
+    top: 85px;
+    right: 117px;
+    max-width: 40px;
+    max-height: 40px;
     -webkit-box-shadow:none;
 }
 
-.hestia-testimonials .card-testimonial .card-avatar {
-    float: left;
-    /*margin-top: 16px;*/
-    margin-right: 4px;
-}
-
 .hestia-testimonials .card-testimonial .card-title {
-    display: -webkit-box;
-    margin-top: -25px;
-}
-.hestia-testimonials .card-testimonial .text-muted {
-    display: -webkit-box;
-    margin-top: -8px;
+    text-align: left;
+    padding-left:45px;
+    color: #9A9A9A;
 }
 
-.hestia-testimonials .card-testimonial .card-description {
+.hestia-testimonials .card-testimonial .card-description,
+.hestia-testimonials .card-testimonial .text-muted {
+    text-align: left;
+}
+
+/*Meet the team*/
+.hestia-team .text-center .hestia-title {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 40px;
+    padding-bottom: 10px;
+    color: #999999;
+}
+
+.hestia-team .text-center .description {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 10px;
+}
+
+.hestia-team-content .card-plain  .card-image {
+    border: 5px solid #EEEEEE;
+    border-radius: 50%;
+    width: 124px;
+    height: 124px;
+    -webkit-box-shadow: none;
+}
+
+.hestia-team-content .card-plain .content .card-title {
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 300;
+    margin: 0 0 10px 0;
+    color: #333333;
+}
+
+.hestia-team-content .card-plain .content .card-description {
+    display: none;
+}
+
+.hestia-team-content .card-plain .col-md-5,
+.hestia-team-content .card-plain .col-md-7 {
+    float: none;
+    margin: 0 auto;
     text-align: center;
 }
 
+.hestia-team-content .card-plain .card-image {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
 
+.hestia-team-content .card-plain .text-muted {
+    font-size: 16px;
+    font-weight: 300;
+    line-height:29px ;
+    color: #9A9A9A;
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+/*Subscribe*/
+.hestia-ribbon .hestia-like-table .text-center .hestia-subscribe-button {
+    background-color: #2CA8FF;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: 100%;
+}
+
+.hestia-ribbon .hestia-like-table .text-center .hestia-subscribe-button:hover {
+    background-color: dodgerblue;
+}
