@@ -72,12 +72,15 @@ Version: 1.0.0
 }
 
 .hestia-testimonials .card-testimonial .card-avatar .img {
-    position: relative;
-    top: 85px;
-    right: 117px;
     max-width: 40px;
     max-height: 40px;
     -webkit-box-shadow:none;
+}
+
+.hestia-testimonials .card-testimonial .card-avatar {
+    position: absolute;
+    top: 35px;
+    right: 313px;
 }
 
 .hestia-testimonials .card-testimonial .card-title {
@@ -154,12 +157,87 @@ Version: 1.0.0
 
 /*Subscribe*/
 .hestia-ribbon .hestia-like-table .text-center .hestia-subscribe-button {
-    background-color: #2CA8FF;
-    -webkit-box-shadow: none;
-    box-shadow: none;
     width: 100%;
 }
 
-.hestia-ribbon .hestia-like-table .text-center .hestia-subscribe-button:hover {
-    background-color: dodgerblue;
+/*=====Single Product Page=====*/
+
+.single-product .type-product .entry-title {
+    font-size: 28px;
+    font-weight:500;
+    text-transform: uppercase;
+    line-height:30px;
+    color: #333;
+    margin-top: 0;
+    margin: 30px 0 15px;
+}
+
+.single-product .type-product .woocommerce-breadcrumb,
+.single-product .type-product .woocommerce-product-rating,
+.single-product .type-product .woocommerce-product-gallery__trigger {
+    display: none;
+}
+
+.single-product .type-product .woocommerce-product-gallery .flex-control-nav img {
+    border-radius: 5px;
+}
+
+.single-product .type-product .flex-viewport {
+    border-radius: 5px;
+}
+
+.single-product .type-product .price {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.single-product .type-product .cart {
+    position: absolute;
+    top: 580px;
+    right: 338px;
+}
+
+.single-product .related.products h2 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+
+.single-product .related.products .card-title {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #333;
+    margin: 0;
+}
+
+.single-product .related.products .card-description {
+    display: none;
+    margin-bottom: 10px;
+}
+
+.single-product .related.products .footer .fa-cart-plus {
+    display: none;
+}
+
+.single-product .woocommerce-Reviews .comment-reply-title {
+    font-size: 28px;
+    font-weight:500;
+    text-transform: uppercase;
+    line-height:30px;
+    color: #333;
+}
+
+.single-product .woocommerce-Reviews .comment-form .comment-form-rating,
+.single-product .woocommerce-Reviews .comment-form .comment-form-comment {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight:300;
+    color: #333;
+    margin: 0;
 }
