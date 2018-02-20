@@ -162,14 +162,14 @@ Version: 1.0.0
 
 /*=====Single Product Page=====*/
 
-.single-product .type-product .entry-title {
+.woocommerce.single-product .product_title.entry-title {
     font-size: 28px;
     font-weight:500;
     text-transform: uppercase;
     line-height:30px;
     color: #333;
-    margin-top: 0;
     margin: 30px 0 15px;
+    margin-top: 0;
 }
 
 .single-product .type-product .woocommerce-breadcrumb,
@@ -212,7 +212,7 @@ Version: 1.0.0
     font-size: 20px;
     line-height: 30px;
     font-weight: 300;
-    color: #333;
+    color: #333333;
     margin: 0;
 }
 
@@ -240,4 +240,59 @@ Version: 1.0.0
     font-weight:300;
     color: #333;
     margin: 0;
+}
+
+
+/*=====Cart Page=====*/
+/*Cart Styles*/
+.woocommerce-cart .main .blog-post h1.hestia-title {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #333331;
+}
+
+.woocommerce-cart .main .blog-post .shop_table th {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #9A9A9A;
+}
+
+.woocommerce-cart .main .blog-post .shop_table .product-name a,
+.woocommerce-cart .main .blog-post .shop_table .product-price .amount,
+.woocommerce-cart .main .blog-post .shop_table .product-quantity .input-text,
+.woocommerce-cart .main .blog-post .shop_table .product-subtotal .amount {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 21px;
+    color: #333;
+}
+
+/*Cart Total Styles*/
+.woocommerce-cart .main .cart_totals h2 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.woocommerce-cart .main .cart_totals .shop_table th {
+    color: #333;
+}
+
+ /*Removing button shadow*/
+.woocommerce-cart .main .cart_totals  .checkout-button {
+   box-shadow: none;
+}
+
+.woocommerce-cart .main .cart_totals  .checkout-button:hover {
+    box-shadow: none;
+}
+
+.woocommerce-cart .main  .actions .button:hover {
+    box-shadow: none;
+}
+
+/*Removing box shadow*/
+.woocommerce-cart .main .cart_totals .card-raised {
+    box-shadow: none;
 }
