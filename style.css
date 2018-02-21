@@ -298,6 +298,7 @@ Version: 1.0.0
 }
 
 /*======Removing boxed layout=====*/
+
  .main-raised {
     margin:0;
     box-shadow: none;
@@ -307,3 +308,47 @@ Version: 1.0.0
  .card-product .card-image {
      margin: 0;
  }
+
+ /*=====Pagination=====*/
+
+/*Circle around page number*/
+
+.woocommerce.woocommerce-page .woocommerce-pagination  ul li a {
+    border: 1px solid #DDDDDD;
+}
+
+.woocommerce.woocommerce-page .woocommerce-pagination  ul li a:hover   {
+    background-color: #DADADA;
+}
+
+
+.woocommerce.woocommerce-page .woocommerce-pagination  .next.page-numbers,
+.woocommerce.woocommerce-page .woocommerce-pagination  .prev.page-numbers {
+    display: none;
+}
+
+/*Removing the shadow of the active link*/
+.woocommerce.woocommerce-page .woocommerce-pagination ul li span.current {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+/*Adding FontAwesome icons*/
+.woocommerce.woocommerce-page .woocommerce-pagination ul.page-numbers::before {
+    font-family: FontAwesome;
+    content:"\f100" ;
+    position: relative;
+    bottom: -26px;
+    right: 20px;
+
+}
+
+.woocommerce.woocommerce-page .woocommerce-pagination ul.page-numbers::after {
+    font-family: FontAwesome;
+    content:"\f101" ;
+    position: relative;
+    bottom: 26px;
+    left: 84px;
+
+}
+
