@@ -55,3 +55,13 @@ function nystia_get_parent_options() {
     }
 }
 add_action( 'after_switch_theme', 'nystia_get_parent_options' );
+
+/**
+ * Remove boxed layout control
+ *
+ * @since 1.0.0
+ */
+function nystia_remove_boxed_layout( $wp_customize ) {
+    $wp_customize->remove_control( 'hestia_general_layout' );
+}
+add_action( 'customize_register', 'nystia_remove_boxed_layout', 100 );

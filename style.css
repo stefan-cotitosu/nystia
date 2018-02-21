@@ -296,3 +296,14 @@ Version: 1.0.0
 .woocommerce-cart .main .cart_totals .card-raised {
     box-shadow: none;
 }
+
+/*======Removing boxed layout=====*/
+ .main-raised {
+    margin:0;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+ .card-product .card-image {
+     margin: 0;
+ }
