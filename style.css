@@ -313,42 +313,87 @@ Version: 1.0.0
 
 /*Circle around page number*/
 
-.woocommerce.woocommerce-page .woocommerce-pagination  ul li a {
+.woocommerce.woocommerce-page .woocommerce-pagination  ul li a,
+.blog a.page-numbers {
     border: 1px solid #DDDDDD;
 }
 
+.woocommerce.woocommerce-page .woocommerce-pagination  .prev.page-numbers,
+.woocommerce.woocommerce-page .woocommerce-pagination  .next.page-numbers {
+    color: #f0f0f0;
+    padding: 0 4px;
+    border: 1px solid #ddd;
+}
+
+.blog .next.page-numbers,
+.blog .prev.page-numbers {
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+}
+
+.blog a.next.page-numbers:hover,
+.blog a.prev.page-numbers:hover {
+    color: #f0f0f0;
+    overflow: hidden;
+}
+
+/*Hover color*/
 .woocommerce.woocommerce-page .woocommerce-pagination  ul li a:hover   {
     background-color: #DADADA;
 }
 
-
-.woocommerce.woocommerce-page .woocommerce-pagination  .next.page-numbers,
-.woocommerce.woocommerce-page .woocommerce-pagination  .prev.page-numbers {
-    display: none;
+.woocommerce.woocommerce-page .woocommerce-pagination  a.prev.page-numbers:hover,
+.woocommerce.woocommerce-page .woocommerce-pagination  a.next.page-numbers:hover{
+    color: #DDDDDD;
 }
 
 /*Removing the shadow of the active link*/
-.woocommerce.woocommerce-page .woocommerce-pagination ul li span.current {
+.woocommerce.woocommerce-page .woocommerce-pagination ul li span.current,
+.blog .page-numbers.current {
     box-shadow: none;
     -webkit-box-shadow: none;
 }
 
+.blog .page-numbers.current:hover {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+
 /*Adding FontAwesome icons*/
-.woocommerce.woocommerce-page .woocommerce-pagination ul.page-numbers::before {
+.woocommerce.woocommerce-page .woocommerce-pagination li .prev::before {
     font-family: FontAwesome;
     content:"\f100" ;
+    color: #999;
     position: relative;
-    bottom: -26px;
-    right: 20px;
+    bottom: 1px;
+    right: -5px;
 
 }
 
-.woocommerce.woocommerce-page .woocommerce-pagination ul.page-numbers::after {
+.woocommerce.woocommerce-page .woocommerce-pagination li .next::after {
     font-family: FontAwesome;
     content:"\f101" ;
+    color:#999;
     position: relative;
-    bottom: 26px;
-    left: 84px;
-
+    bottom: 1px;
+    left:-5px;
 }
 
+.blog .nav-links .prev::before {
+    content: '\f100';
+    font-family: FontAwesome;
+    position: relative;
+    right: 2px;
+    color:#999;
+}
+
+.blog .nav-links .next::after {
+    content: '\f101';
+    font-family: FontAwesome;
+    position: relative;
+    right: 28px;
+    color:#999;
+}
