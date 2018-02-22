@@ -397,3 +397,51 @@ Version: 1.0.0
     right: 28px;
     color:#999;
 }
+
+/*=====Shop Page=====*/
+
+
+/*Content left align*/
+.woocommerce .card-product .category,
+.woocommerce .card-product .card-title {
+    text-align: left;
+}
+
+/*Font properties*/
+.archive.woocommerce.woocommerce-page .blog-post .products  li .content .category a {
+    color: #999;
+}
+
+/*Hiding product description+category*/
+.woocommerce .card-product .card-description,
+.archive.woocommerce.woocommerce-page .blog-post .products  li .content h6.category {
+    display: none;
+}
+
+/*Font properties*/
+.woocommerce .card-product .card-title {
+    font-size:19px;
+    font-weight: 300;
+    line-height: 26px;
+    text-align: left;
+    margin: 15px 0 5px;
+}
+
+.woocommerce.archive .main-raised {
+    margin-bottom: 0;
+}
+
+/*Removes box shadow*/
+.archive.woocommerce .card,
+.archive.woocommerce .card-image {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.archive.woocommerce .products .card-product .card-image {
+    box-shadow: none;
+}
+
+.woocommerce .card.card-product {
+    background-color: #F0F0F0;
+}
