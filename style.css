@@ -445,3 +445,81 @@ Version: 1.0.0
 .woocommerce .card.card-product {
     background-color: #F0F0F0;
 }
+
+/*=====Comments=====*/
+/*Remove avatar and buttons shadow*/
+.blog-post .section-comments .avatar {
+    -webkit-box-shadow: none;
+    nox-shadow:none;
+}
+
+.blog-post input[type="submit"] {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    margin:-25px 10px;
+}
+
+.blog-post .btn-primary.pull-right:hover {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+/*Text align*/
+.blog-post .section-comments .hestia-title {
+    font-size: 27px;
+    font-weight: 700;
+    text-align: left;
+    color: #3C4858;
+}
+
+.blog-post .comment .media-footer .comment-reply-link {
+    float: none;
+}
+
+.blog-post .comment .media-heading small {
+    /*float: right;*/
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: capitalize;
+    color: #777;
+}
+
+/*Cooments thread*/
+.blog-post .section-comments ul.children {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.blog-post .section-comments .comment {
+    margin-top: 40px;
+}
+
+/*Font styles*/
+.blog-post .section-comments .comment .media-heading {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+
+.blog-post .section-comments .comment .media-body p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #555;
+}
+
+.blog-post .section-comments .comment:not(.parent){
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+}
+
+/*Reply section*/
+.blog-post .media-body .form-control {
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+}
+
+.blog-post .media-body .form-group .control-label {
+    position: unset;
+    margin-top: -10px;
+}
