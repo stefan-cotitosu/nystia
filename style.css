@@ -172,12 +172,6 @@ Version: 1.0.0
     margin-top: 0;
 }
 
-.single-product .type-product .woocommerce-breadcrumb,
-.single-product .type-product .woocommerce-product-rating,
-.single-product .type-product .woocommerce-product-gallery__trigger {
-    display: none;
-}
-
 .single-product .type-product .woocommerce-product-gallery .flex-control-nav img {
     border-radius: 5px;
 }
@@ -242,7 +236,11 @@ Version: 1.0.0
     margin: 0;
 }
 
-
+.woocommerce .blog-post .product .button,
+.woocommerce .blog-post .product .button:hover {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
 /*=====Cart Page=====*/
 /*Cart Styles*/
 .woocommerce-cart .main .blog-post h1.hestia-title {
@@ -498,7 +496,9 @@ Version: 1.0.0
     margin:-25px 10px;
 }
 
-.blog-post .btn-primary.pull-right:hover {
+.blog-post .btn-primary.pull-right:hover,
+.blog-post .btn-primary.pull-right:active,
+.blog-post .btn-primary.pull-right:focus {
     box-shadow: none;
     -webkit-box-shadow: none;
 }
@@ -561,4 +561,28 @@ Version: 1.0.0
 .blog-post .media-body .form-group .control-label {
     position: unset;
     margin-top: -10px;
+}
+
+/*=====WooCommerce Notifications*/
+.woocommerce-cart .woocommerce .woocommerce-message,
+.woocommerce .blog-post .woocommerce-message {
+    text-align: center;
+    margin-left: -100%;
+    margin-right: -100%;
+
+}
+
+.woocommerce .blog-post .woocommerce-message a {
+    position: relative;
+    right: 1360px;
+    top: -6px;
+    border: 1px solid;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.woocommerce.single-product .blog-post .col-md-12 >div[id^=product].product.type-product {
+    margin-top: unset;
+    box-shadow: none;
+    background-color: #f0f0f0;
 }
