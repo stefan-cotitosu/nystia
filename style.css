@@ -249,7 +249,7 @@ Version: 1.0.0
     font-size: 22px;
     line-height: 30px;
     font-weight: 400;
-    color: #333331;
+    color: #333333;
 }
 
 .woocommerce-cart .main .blog-post .shop_table th {
@@ -263,11 +263,12 @@ Version: 1.0.0
 .woocommerce-cart .main .blog-post .shop_table .product-price .amount,
 .woocommerce-cart .main .blog-post .shop_table .product-quantity .input-text,
 .woocommerce-cart .main .blog-post .shop_table .product-subtotal .amount {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
-    line-height: 21px;
+    line-height: 22px;
     color: #333;
 }
+
 
 /*Cart Total Styles*/
 .woocommerce-cart .main .cart_totals h2 {
@@ -297,6 +298,16 @@ Version: 1.0.0
     box-shadow: none;
 }
 
+.woocommerce-page .woocommerce a.button {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.woocommerce-page .woocommerce .button.wc-backward:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
 /*======Removing boxed layout=====*/
 
  .main-raised {
@@ -314,7 +325,8 @@ Version: 1.0.0
 /*Circle around page number*/
 
 .woocommerce.woocommerce-page .woocommerce-pagination  ul li a,
-.blog a.page-numbers {
+.blog a.page-numbers,
+.archive a.page-numbers {
     border: 1px solid #DDDDDD;
 }
 
@@ -326,7 +338,9 @@ Version: 1.0.0
 }
 
 .blog .next.page-numbers,
-.blog .prev.page-numbers {
+.blog .prev.page-numbers,
+.archive .next.page-numbers,
+.archive .prev.page-numbers {
     color: #fff;
     width: 30px;
     height: 30px;
@@ -334,7 +348,9 @@ Version: 1.0.0
 }
 
 .blog a.next.page-numbers:hover,
-.blog a.prev.page-numbers:hover {
+.blog a.prev.page-numbers:hover,
+.archive a.next.page-numbers:hover,
+.archive a.prev.page-numbers:hover{
     color: #f0f0f0;
     overflow: hidden;
 }
@@ -351,7 +367,8 @@ Version: 1.0.0
 
 /*Removing the shadow of the active link*/
 .woocommerce.woocommerce-page .woocommerce-pagination ul li span.current,
-.blog .page-numbers.current {
+.blog .page-numbers.current,
+.archive .hestia-blogs .page-numbers.current {
     box-shadow: none;
     -webkit-box-shadow: none;
 }
@@ -363,6 +380,7 @@ Version: 1.0.0
 
 
 /*Adding FontAwesome icons*/
+/*Shop page*/
 .woocommerce.woocommerce-page .woocommerce-pagination li .prev::before {
     font-family: FontAwesome;
     content:"\f100" ;
@@ -382,11 +400,12 @@ Version: 1.0.0
     left:-5px;
 }
 
+/*Blog page*/
 .blog .nav-links .prev::before {
     content: '\f100';
     font-family: FontAwesome;
     position: relative;
-    right: 2px;
+    right: 1px;
     color:#999;
 }
 
@@ -394,8 +413,28 @@ Version: 1.0.0
     content: '\f101';
     font-family: FontAwesome;
     position: relative;
-    right: 28px;
+    right: 29px;
     color:#999;
+}
+
+/*Archive page*/
+.archive .hestia-blogs .nav-links .prev.page-numbers::before {
+    font-family: FontAwesome;
+    content: '\f100';
+    position: relative;
+    right: 1px;
+    color:#999;
+
+}
+.archive .hestia-blogs .next::after {
+    font-family: FontAwesome;
+    content: '\f101';
+    position: relative;
+    right: 29px;
+    color:#999;
+}
+
+    /*position: relative;*/
 }
 
 /*=====Shop Page=====*/
@@ -484,7 +523,7 @@ Version: 1.0.0
     color: #777;
 }
 
-/*Cooments thread*/
+/*Comments thread*/
 .blog-post .section-comments ul.children {
     margin-left: 50px;
     margin-top: 20px;
