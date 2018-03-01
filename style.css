@@ -586,3 +586,41 @@ Version: 1.0.0
     box-shadow: none;
     background-color: #f0f0f0;
 }
+
+/*=====Single Post Page=====*/
+/*Removing box-shadow effect on hover*/
+.blog-post .section-blog-info .entry-social a:hover,
+.blog-post .section-blog-info .entry-social a:active {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+/*Opacity*/
+.blog-post .section-blog-info .entry-social a {
+    opacity: 0.8;
+    filter: alpha(opacity=100);
+}
+
+.blog-post .section-blog-info .entry-social a:hover {
+    opacity:1;
+    filter: alpha(opacity=100);
+}
+
+/*Categories and tags styles*/
+.blog-post .section-blog-info .entry-categories .label {
+    font-weight: 500;
+    font-size: 11px;
+    margin-bottom: 3px;
+    padding: 3px 9px 3px;
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+.blog-post .section-blog-info .entry-tag  {
+    font-weight: 500;
+    font-size: 11px;
+    margin-bottom: 3px;
+    padding: 3px 9px 3px;
+    border: 1px solid #e91e63;
+    border-radius: 3px;
+}
