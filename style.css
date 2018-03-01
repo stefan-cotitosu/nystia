@@ -483,6 +483,31 @@ Version: 1.0.0
     background-color: #F0F0F0;
 }
 
+/*Widgets*/
+/**-------------------------------------------/
+/*Button*/
+ .woocommerce .shop-sidebar button {
+     background: -webkit-linear-gradient(45deg, #a81d84 0%, #ea396f 100%);
+     background: linear-gradient(45deg, #a81d84 0%, #ea396f 100%);
+     border-radius: 5px;
+ }
+
+ .woocommerce .shop-sidebar button:hover,
+ .woocommerce .shop-sidebar button.button:hover {
+     background: -webkit-linear-gradient(45deg, #a81d84 0%, #ea396f 100%);
+     background: linear-gradient(45deg, #a81d84 0%, #ea396f 100%);
+
+     box-shadow: none;
+ }
+/*--------------------------------------------*/
+/*Sale*/
+.woocommerce .section-text .onsale {
+    background: -webkit-linear-gradient(45deg, #a81d84 0%, #ea396f 100%);
+    background: linear-gradient(45deg, #a81d84 0%, #ea396f 100%);
+    border-radius: 5px;
+}
+/*--------------------------------------------*/
+
 /*=====Comments=====*/
 /*Remove avatar and buttons shadow*/
 .blog-post .section-comments .avatar {
