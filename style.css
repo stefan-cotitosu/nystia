@@ -53,8 +53,6 @@ Version: 1.0.0
     margin: 0 0 10px;
 }
 
-
-
 /* Testimonials */
 
 .hestia-testimonials .text-center .hestia-title {
@@ -158,6 +156,12 @@ Version: 1.0.0
 /*Subscribe*/
 .hestia-ribbon .hestia-like-table .text-center .hestia-subscribe-button {
     width: 100%;
+}
+
+.home .footer .search-form input[type="submit"],
+.blog-post .footer .search-form input[type="submit"] {
+    top: 19px;
+    left: 10px;
 }
 
 /*=====Single Product Page=====*/
@@ -470,7 +474,9 @@ Version: 1.0.0
 
 /*Removes box shadow*/
 .archive.woocommerce .card,
-.archive.woocommerce .card-image {
+.archive.woocommerce .card-image,
+.woocommerce .added_to_cart.wc-forward,
+.woocommerce .added_to_cart.wc-forward:hover {
     box-shadow: none;
     -webkit-box-shadow: none;
 }
@@ -483,22 +489,113 @@ Version: 1.0.0
     background-color: #F0F0F0;
 }
 
+.woocommerce .added_to_cart.wc-forward {
+    padding: 12px 30px;
+    color: #FFFFFF;
+}
+
 /*Widgets*/
-/**-------------------------------------------/
 /*Button*/
- .woocommerce .shop-sidebar button {
-     background: -webkit-linear-gradient(45deg, #a81d84 0%, #ea396f 100%);
-     background: linear-gradient(45deg, #a81d84 0%, #ea396f 100%);
-     border-radius: 5px;
- }
+.woocommerce .shop-sidebar button,
+.woocommerce .shop-sidebar button.button,
+.woocommerce .section-text .onsale,
+.woocommerce .widget_search input[type="submit"],
+.woocommerce .widget_search button,
+.single-post .footer button,
+.single-post .footer input[type="submit"],
+.home .footer button,
+.home .footer input[type="submit"],
+.blog .blog-sidebar input[type="submit"],
+.blog .blog-sidebar button,
+.blog-post .blog-sidebar button,
+.blog-post .blog-sidebar input[type="submit"],
+.woocommerce .added_to_cart.wc-forward,
+.blog-post .footer input[type="submit"],
+.blog-post .footer button,
+.blog .footer input[type="submit"],
+.blog .footer button,
+.archive .footer input[type="submit"],
+.archive .footer button,
+.archive .blog-sidebar input[type="submit"],
+.archive .blog-sidebar button {
+    background: -webkit-linear-gradient(45deg, #a81d84 0%, #ea396f 100%);
+    background: linear-gradient(45deg, #a81d84 0%, #ea396f 100%);
+    border-radius: 5px;
+}
 
- .woocommerce .shop-sidebar button:hover,
- .woocommerce .shop-sidebar button.button:hover {
-     background: -webkit-linear-gradient(45deg, #a81d84 0%, #ea396f 100%);
-     background: linear-gradient(45deg, #a81d84 0%, #ea396f 100%);
+.woocommerce .shop-sidebar button:hover,
+.woocommerce.woocommerce-page .form-group button.button:hover,
+.woocommerce.woocommerce-page .form-group button.button,
+.woocommerce.woocommerce-page input[type="submit"]:hover,
+.woocommerce.woocommerce-page input[type="submit"],
+.woocommerce.woocommerce-page button,
+.woocommerce .section-text .product_list_widget img,
+.blog .footer input[type="submit"]:hover,
+.blog .footer input[type="submit"],
+.blog .footer button,
+.blog .footer button:hover,
+.archive .footer input[type="submit"],
+.archive .footer input[type="submit"]:hover,
+.archive .footer button,
+.archive .footer button:hover,
+.archive .search-form input[type="submit"],
+.single-post .footer button,
+.single-post .footer input[type="submit"],
+.home .footer button,
+.home .footer input[type="submit"],
+.blog .blog-sidebar input[type="submit"],
+.blog .blog-sidebar button,
+.blog-post .blog-sidebar input[type="submit"]:hover,
+.blog-post .blog-sidebar button:hover ,
+.blog-post .blog-sidebar button,
+.blog-post .footer input[type="submit"]:hover {
+    box-shadow: none;
+}
 
-     box-shadow: none;
- }
+/*Font styles*/
+.woocommerce .section-text .widget_search h5,
+.blog .footer .widget h5,
+.blog-post .footer .widget h5,
+.archive .footer .widget h5 {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+    text-transform: uppercase;
+    margin: 5px 0 10px 0;
+    color: #DDDDDD;
+}
+
+.woocommerce .footer .widget h5 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    margin-bottom: 15px;
+    color: #DDDDDD;
+}
+
+.blog .blog-sidebar .widget h5,
+.blog-post .blog-sidebar .widget h5,
+.woocommerce .section-text .widget h5,
+.archive .blog-sidebar .widget h5 {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+    text-transform: uppercase;
+    margin: 5px 0 10px 0;
+    color: #333333;
+}
+
+.blog .blog-sidebar a,
+.blog-post .blog-sidebar a,
+.woocommerce .section-text a,
+.archive .blog-sidebar a {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    margin-bottom: 15px;
+    color: #333333;
+}
+
 /*--------------------------------------------*/
 /*Sale*/
 .woocommerce .section-text .onsale {
