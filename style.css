@@ -9,11 +9,15 @@ Version: 1.0.0
 /* ===== Home ===== */
 
 /* Features */
+.home .hestia-big-title-content .buttons .btn-primary  {
+    border-radius: 6px;
+    box-shadow: none;
+}
 
 .home .hestia-features .hestia-title {
-    color: #999;
+    color: #333;
     font-size: 36px;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 24px;
     padding-bottom: 10px;
     margin: 0 0 10px;
@@ -40,33 +44,35 @@ Version: 1.0.0
 
 .home .hestia-features .feature-box .info-title {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 17px;
     margin-bottom: 15px;
     margin-top: 10px;
 }
 
-.home .hestia-features .feature-box .hestia-info,
+.home .hestia-features .feature-box .hestia-info p ,
 .home .hestia-features .description {
     font-size: 16px;
     line-height: 24px;
     margin: 0 0 10px;
+    color: #333;
 }
 
 /* Testimonials */
 
 .hestia-testimonials .text-center .hestia-title {
     font-size: 36px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 17px;
     padding-bottom: 10px;
-    color: #999999;
+    color: #333;
 }
 
 .hestia-testimonials .text-center .description {
     font-size: 16px;
     line-height: 24px;
     margin: 0 0 10px;
+    color: #333;
 }
 
 .hestia-testimonials .card-testimonial .card-avatar .img {
@@ -89,22 +95,73 @@ Version: 1.0.0
 
 .hestia-testimonials .card-testimonial .card-description,
 .hestia-testimonials .card-testimonial .text-muted {
+    color: #333;
     text-align: left;
 }
 
+/*Testimonials box-shadow*/
+.home .hestia-testimonials-content .card {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    height: 190px;
+}
+
+
+/*Products*/
+.home .hestia-shop-content .card-description,
+.home .card .category,
+.home .card .fa-cart-plus {
+    display: none;
+}
+
+.home .hestia-shop {
+    background-color: #FFFFFF;
+}
+
+.home .card.card-product {
+    box-shadow:none;
+    -webkit-box-shadow: none;
+}
+
+.home .hestia-shop .hestia-title {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.home .hestia-shop .description,
+.home .hestia-shop .description a {
+    font-size: 16px;
+    color: #333;
+    margin-top:-10px;
+}
+
+.home .hestia-shop .card-title,
+.home .hestia-shop .price {
+    font-size:22px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #333;
+}
+
+.home .hestia-shop .price {
+    text-align: center;
+}
 /*Meet the team*/
 .hestia-team .text-center .hestia-title {
     font-size: 36px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 40px;
     padding-bottom: 10px;
-    color: #999999;
+    color: #333;
 }
 
 .hestia-team .text-center .description {
     font-size: 16px;
     line-height: 24px;
     margin: 0 0 10px;
+    color: #333;
 }
 
 .hestia-team-content .card-plain  .card-image {
@@ -162,6 +219,15 @@ Version: 1.0.0
 .blog-post .footer .search-form input[type="submit"] {
     top: 19px;
     left: 10px;
+}
+
+.home .hestia-ribbon .hestia-subscribe-button {
+    border-radius: 6px;
+    box-shadow: none;
+}
+
+.home .hestia-ribbon .hestia-subscribe-button:hover {
+    box-shadow: none;
 }
 
 /*=====Single Product Page=====*/
@@ -638,7 +704,6 @@ Version: 1.0.0
 }
 
 .blog-post .comment .media-heading small {
-    /*float: right;*/
     font-size: 14px;
     font-weight: normal;
     text-transform: capitalize;
