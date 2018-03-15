@@ -148,14 +148,6 @@ Version: 1.0.0
     text-shadow: 0 1px 3px rgba(0, 0, 0, 1);
 }
 
-.home .hestia-blog-content .card-plain a img,
-.home .hestia-blog-content .card-plain a img:hover
-.home .hestia-blog-content .card-plain a,
-.home .hestia-blog-content .card-plain a:hover,
-.home a:not(.btn) {
-    -webkit-transition: none;
-}
-
 .home .hestia-blog-content .content {
     transform: translateY(-100px);
 }
