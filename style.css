@@ -237,10 +237,7 @@ Version: 1.0.0
     margin-top: 0;
 }
 
-.single-product .type-product .woocommerce-product-gallery .flex-control-nav img {
-    border-radius: 5px;
-}
-
+.single-product .type-product .woocommerce-product-gallery .flex-control-nav img,
 .single-product .type-product .flex-viewport {
     border-radius: 5px;
 }
@@ -308,6 +305,11 @@ Version: 1.0.0
     border-radius: 30px;
 }
 
+.woocommerce.woocommerce-page #reviews #comments ol.commentlist li img.avatar {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
 /*=====Cart Page=====*/
 /*Cart Styles*/
 .woocommerce-cart .main .blog-post h1.hestia-title {
@@ -345,32 +347,15 @@ Version: 1.0.0
     color: #333;
 }
 
- /*Removing button shadow*/
-.woocommerce-cart .main .cart_totals  .checkout-button {
-   box-shadow: none;
-}
-
-.woocommerce-cart .main .cart_totals  .checkout-button:hover {
-    box-shadow: none;
-}
-
-.woocommerce-cart .main  .actions .button:hover {
-    box-shadow: none;
-}
-
-/*Removing box shadow*/
-.woocommerce-cart .main .cart_totals .card-raised {
-    box-shadow: none;
-}
-
-.woocommerce-page .woocommerce a.button {
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
+ /*Removing shadows*/
+.woocommerce-cart .main .cart_totals  .checkout-button,
+.woocommerce-cart .main .cart_totals  .checkout-button:hover,
+.woocommerce-cart .main  .actions .button:hover,
+.woocommerce-cart .main .cart_totals .card-raised,
+.woocommerce-page .woocommerce a.button,
 .woocommerce-page .woocommerce .button.wc-backward:hover {
+   box-shadow: none;
     -webkit-box-shadow: none;
-    box-shadow: none;
 }
 
 .woocommerce-cart table.shop_table td.actions input[type="submit"],
@@ -452,7 +437,6 @@ Version: 1.0.0
     -webkit-box-shadow: none;
 }
 
-
 /*Adding FontAwesome icons*/
 /*Shop page*/
 .woocommerce.woocommerce-page .woocommerce-pagination li .prev::before {
@@ -507,7 +491,6 @@ Version: 1.0.0
     right: 29px;
     color:#999;
 }
-
 
 /*=====Shop Page=====*/
 /*Content left align*/
@@ -568,6 +551,7 @@ Version: 1.0.0
 .woocommerce .shop-sidebar button.button {
     border-radius: 30px;
 }
+
 /*Widgets*/
 /*Button*/
 .woocommerce .shop-sidebar button,
@@ -592,9 +576,12 @@ Version: 1.0.0
 .archive .footer button,
 .archive .blog-sidebar input[type="submit"],
 .archive .blog-sidebar button {
-    background: -webkit-linear-gradient(45deg, #a81d84 0%, #ea396f 100%);
-    background: linear-gradient(45deg, #a81d84 0%, #ea396f 100%);
-    /*border-radius: 5px;*/
+    background: -moz-linear-gradient(218deg, #26c485 0%, #55F2F0 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #55F2F0), color-stop(100%, #26c485)); /* safari4+,chrome */
+    background: -webkit-linear-gradient(218deg, #26c485 0%, #55F2F0 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(218deg, #26c485 0%, #55F2F0 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(218deg, #26c485 0%, #55F2F0 100%); /* ie10+ */
+    background: linear-gradient(232deg, #26c485 0%, #55F2F0 100%); /* w3c */
 }
 
 .woocommerce .shop-sidebar button:hover,
@@ -672,14 +659,11 @@ Version: 1.0.0
 
 /*Sale*/
 .woocommerce .section-text .onsale {
-    background: -webkit-linear-gradient(45deg, #a81d84 0%, #ea396f 100%);
-    background: linear-gradient(45deg, #a81d84 0%, #ea396f 100%);
     border-radius: 5px;
 }
 
 /*=====Comments=====*/
 /*Remove avatar and buttons shadow*/
-
 .blog-post input[type="submit"] {
     box-shadow: none;
     -webkit-box-shadow: none;
@@ -764,6 +748,7 @@ Version: 1.0.0
 .blog-post .media-body .comment-respond {
     margin-top: 50px;
 }
+
 /*=====WooCommerce Notifications*/
 .woocommerce-cart .woocommerce .woocommerce-message,
 .woocommerce .blog-post .woocommerce-message {
@@ -808,8 +793,8 @@ Version: 1.0.0
     line-height: 26px;
     margin: 0 0 10px;
     color: #333;
-
 }
+
 .blog-post .section-text p {
     width:80%;
 }
@@ -817,23 +802,23 @@ Version: 1.0.0
 /*Side social media*/
 .blog-post .section-blog-info .entry-social {
     position: relative;
-    top: -583px;
+    top: -300px;
     left: 89px;
+    /*border-bottom: 1px solid #f0f0f0;*/
+    /*width: 58%;*/
+    padding-bottom: 15px;
 }
 
 .blog-post .section-blog-info .entry-categories {
     position: relative;
-    top: -508px;
+    top: -345px;
     left: 700px;
 }
 
 .blog-post .section-blog-info .entry-tags {
     position: relative;
-    top: -489px;
+    top: -425px;
     left: 700px;
-    border-bottom: 1px solid #f0f0f0;
-    width: 58%;
-    padding-bottom: 15px;
 }
 
 /*Removing box-shadow effect on hover*/
@@ -910,6 +895,7 @@ Version: 1.0.0
 .blog-post .btn {
     border-radius: 30px;
 }
+
 /*=====Blog post=====*/
 /*Make side-bar disappear*/
 .blog .blog-sidebar {
@@ -937,19 +923,42 @@ Version: 1.0.0
     margin-left: -16px;
 }
 
-.blog .hestia-blogs   article:nth-child(2n){
+.blog .hestia-blogs article:nth-child(2n){
     position: relative;
-    left: 200px;
+    left: 280px;
 }
 
-.blog .hestia-blogs   article:nth-child(2n-1){
+.blog .hestia-blogs article:nth-child(2n-1){
     position: relative;
-    left: -160px;
+    left: 0px;
+}
+
+/*=====Checkout page======*/
+.woocommerce-checkout .section-text .woocommerce-billing-fields__field-wrapper .form-row-last {
+    float: none;
+}
+
+.woocommerce-checkout  .hestia-title {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.woocommerce-checkout .woocommerce-billing-fields h3 {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.woocommerce-checkout .form-row.place-order button.button.alt {
+    border-radius: 30px;
+    box-shadow: none;
+}
+.woocommerce-checkout .form-row.place-order button.button.alt:hover {
+    box-shadow: none;
 }
 
 /*=====Media queries=====*/
 @media only screen  and (max-width : 1224px) {
-    /*======Single post blog page*/
+    /*Single post blog page*/
     .blog-post .section-blog-info .entry-categories,
     .blog-post .section-blog-info .entry-social,
     .blog-post .section-blog-info .entry-tags {
@@ -961,9 +970,19 @@ Version: 1.0.0
     .blog-post .related-posts .blog-item-title-link {
         top: -190px;
     }
+
+    /*Blog page*/
+    .blog .hestia-blogs .blog-posts-wrap article:nth-child(2n){
+        left: 224px;
+    }
+
+    .blog .hestia-blogs .blog-posts-wrap article .row:nth-child(2n-1){
+        margin-right: -93px;
+    }
 }
 
 @media only screen  and (max-width: 992px){
+    /*Single post blog page*/
     .col-md-8 {
         width: 66.66666667%;
         margin-left: 15%;
@@ -974,25 +993,82 @@ Version: 1.0.0
         top: -460px;
     }
 
+    /*Blog page*/
+    .blog .hestia-blogs article .card-title {
+        font-size: 20px;
+    }
+
+    .blog .hestia-blogs article .card-description,
+    .blog .hestia-blogs article .author {
+        font-size: 12px;
+    }
+
+    .blog .hestia-blogs .blog-posts-wrap article:nth-child(2n-1){
+        left: -113px;
+    }
+
+    .blog .hestia-blogs .blog-posts-wrap article:nth-child(2n){
+        left: 58px;
+    }
+
+    .blog .hestia-blogs .blog-posts-wrap article .row {
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 150px;
+    line-height: 1.2em;
+    }
 }
 
 @media only screen  and (max-width:760px){
+    /*Single blog page post*/
     .blog-post .related-posts .category.text-info a,
     .blog-post .related-posts .blog-item-title-link {
         top: -330px;
     }
-}
 
-@media only screen  and  (max-width: 480px) {
-    .blog-post .related-posts .category.text-info a,
-    .blog-post .related-posts .blog-item-title-link {
-        top: -180px;
+    /*Blog page*/
+    .blog .hestia-blogs .blog-posts-wrap   article:nth-child(2n),
+    .blog .hestia-blogs  .blog-posts-wrap article:nth-child(2n-1){
+        left: 0;
+    }
+
+    .blog .hestia-blogs .blog-posts-wrap article .row {
+        word-wrap: break-word;
+        overflow: visible;
+        max-height: none;
+    }
+
+    .blog .hestia-blogs .blog-posts-wrap  article .row {
+        width: 359px;
+        margin: 0 auto;
+    }
+
+    .blog .hestia-blogs .blog-posts-wrap article .col-ms-7.col-sm-7,
+    .blog .hestia-blogs .blog-posts-wrap article .col-ms-5.col-sm-5 {
+        width: auto;
+    }
+
+     .blog .hestia-blogs .card-image {
+        margin-right: -16px;
+    }
+
+    .blog .hestia-blogs .blog-posts-wrap article .row:nth-child(2n-1){
+        margin:0 auto;
     }
 }
 
-@media only screen  and  (max-width: 320px) {
-    .blog-post .related-posts .category.text-info a,
-    .blog-post .related-posts .blog-item-title-link {
-        top: -170px;
+@media only screen and (max-width : 480px){
+    .blog .hestia-blogs .blog-posts-wrap article .row {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .blog .hestia-blogs .blog-posts-wrap article .row {
+        width: 235px;
+    }
+
+    .blog .hestia-blogs .col-md-8 {
+        padding: unset;
     }
 }
