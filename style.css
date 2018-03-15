@@ -7,7 +7,6 @@ Version: 1.0.0
 */
 
 /* ===== Home ===== */
-
 /* Features */
 .home .btn-primary  {
     border-radius: 30px;
@@ -87,7 +86,7 @@ Version: 1.0.0
 .hestia-testimonials .card-testimonial .card-avatar {
     position: absolute;
     top: 35px;
-    right: 313px;
+    right: 300px;
 }
 
 .hestia-testimonials .card-testimonial .card-title {
@@ -106,12 +105,63 @@ Version: 1.0.0
 .home .hestia-testimonials-content .card {
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.3);
     height: 190px;
+    padding-left: 15px;
+    padding-right: 10px;
 }
 
+/*Subscribe*/
+.home .hestia-subscribe .text-center .title {
+    font-size: 36px;
+    border: 0;
+    padding:0;
+    font-weight: 300;
+    line-height: 54px;
+}
 
+.home .hestia-subscribe .text-center .subscribe-description {
+    font-size: 18px;
+    font-weight:500;
+}
+/*Blog*/
+.home .hestia-blogs .text-center .hestia-title {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 17px;
+    padding-bottom: 10px;
+    color: #333;
+}
+
+.home .hestia-blogs .text-center .description {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.home  .hestia-blogs .hestia-blog-content .card-description {
+    display:none;
+}
+
+.home .hestia-blogs .hestia-blog-content .content .category a,
+.home .hestia-blogs .hestia-blog-content .content .blog-item-title-link {
+    color: white;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 1);
+}
+
+.home .hestia-blog-content .card-plain a img,
+.home .hestia-blog-content .card-plain a img:hover
+.home .hestia-blog-content .card-plain a,
+.home .hestia-blog-content .card-plain a:hover,
+.home a:not(.btn) {
+    -webkit-transition: none;
+}
+
+.home .hestia-blog-content .content {
+    transform: translateY(-100px);
+}
 /*Products*/
 .home .hestia-shop-content .card-description,
-.home .card .category,
+.home  .hestia-shop-content .card .category,
 .home .card .fa-cart-plus {
     display: none;
 }
@@ -129,6 +179,7 @@ Version: 1.0.0
     font-size: 22px;
     font-weight: 500;
     line-height: 30px;
+    color: #333;
 }
 
 .home .hestia-shop .description,
@@ -149,6 +200,7 @@ Version: 1.0.0
 .home .hestia-shop .price {
     text-align: center;
 }
+
 /*Meet the team*/
 .hestia-team .text-center .hestia-title {
     font-size: 36px;
@@ -211,7 +263,7 @@ Version: 1.0.0
     border-bottom: 1px solid #EEEEEE;
 }
 
-/*Subscribe*/
+/*Ribbon*/
 .hestia-ribbon .hestia-like-table .text-center .hestia-subscribe-button {
     width: 100%;
 }
@@ -224,6 +276,29 @@ Version: 1.0.0
 
 .home .hestia-ribbon .hestia-subscribe-button:hover {
     box-shadow: none;
+}
+
+.home .hestia-ribbon .hestia-title {
+    font-size: 36px;
+    border: 0;
+    padding:0;
+    font-weight: 300;
+    line-height: 54px;
+}
+
+/*Contact form*/
+.home .hestia-contact .hestia-title {
+    font-size: 37px;
+    font-weight: 500;
+}
+
+.home .hestia-contact .hestia-description .info-title {
+    font-size: 18px;
+    font-weight:500;
+}
+
+.home .hestia-contact .description p {
+    font-size: 15px;
 }
 
 /*=====Single Product Page=====*/
@@ -249,12 +324,6 @@ Version: 1.0.0
     width: 90%;
     padding-bottom: 15px;
     border-bottom: 1px solid #EEEEEE;
-}
-
-.single-product .type-product .cart {
-    position: absolute;
-    top: 580px;
-    right: 338px;
 }
 
 .single-product .related.products h2 {
@@ -299,7 +368,9 @@ Version: 1.0.0
 }
 
 .woocommerce .blog-post .product .button,
-.woocommerce .blog-post .product .button:hover {
+.woocommerce .blog-post .product .button:hover,
+.woocommerce #review_form #respond .form-submit input,
+.woocommerce #review_form #respond .form-submit input:hover {
     box-shadow: none;
     -webkit-box-shadow: none;
     border-radius: 30px;
@@ -308,6 +379,14 @@ Version: 1.0.0
 .woocommerce.woocommerce-page #reviews #comments ol.commentlist li img.avatar {
     box-shadow: none;
     -webkit-box-shadow: none;
+}
+
+.woocommerce .related.products .content {
+    background: #fff;
+}
+
+.woocommerce.single-product .blog-post .col-md-12 > div[id^=product].product {
+    margin-top: unset !important;
 }
 
 /*=====Cart Page=====*/
@@ -455,7 +534,7 @@ Version: 1.0.0
     color:#999;
     position: relative;
     bottom: 1px;
-    left:-5px;
+    left:-7px;
 }
 
 /*Blog page*/
@@ -896,6 +975,10 @@ Version: 1.0.0
     border-radius: 30px;
 }
 
+.woocommerce .products .card-product .tooltip.fade{
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
 /*=====Blog post=====*/
 /*Make side-bar disappear*/
 .blog .blog-sidebar {
@@ -979,6 +1062,10 @@ Version: 1.0.0
     .blog .hestia-blogs .blog-posts-wrap article .row:nth-child(2n-1){
         margin-right: -93px;
     }
+
+    .navbar .navbar-nav > li {
+        margin-right: 0;
+    }
 }
 
 @media only screen  and (max-width: 992px){
@@ -1017,6 +1104,8 @@ Version: 1.0.0
     max-height: 150px;
     line-height: 1.2em;
     }
+
+
 }
 
 @media only screen  and (max-width:760px){
@@ -1058,17 +1147,29 @@ Version: 1.0.0
 }
 
 @media only screen and (max-width : 480px){
+    /*Blog page*/
     .blog .hestia-blogs .blog-posts-wrap article .row {
         width: auto;
+    }
+
+    /*Shop page*/
+    .woocommerce.archive .main.main-raised {
+        margin: 0;
     }
 }
 
 @media only screen and (max-width: 320px){
+    /*Blog page*/
     .blog .hestia-blogs .blog-posts-wrap article .row {
-        width: 235px;
+        width: 200px;
     }
 
     .blog .hestia-blogs .col-md-8 {
         padding: unset;
+    }
+
+    /*Cart page*/
+    .woocommerce-cart .cart_totals .wc-proceed-to-checkout {
+        word-break:keep-all;
     }
 }
