@@ -586,3 +586,104 @@ Version: 1.0.0
     box-shadow: none;
     background-color: #f0f0f0;
 }
+
+/*=====Blog Page =====*/
+.blog .card-blog .col-ms-7 {
+    display: flex;
+    flex-direction: column;
+    min-height: 245px;
+}
+
+.blog .card-blog .category {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: none;
+    padding: 0;
+    margin: 0;
+}
+
+.blog .card-blog .card-title {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.blog .card-blog .card-description p {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    padding: 0;
+    margin: 0;
+    /*margin-bottom: 50px;*/
+}
+
+/*.blog .card-blog .card-description {*/
+    /*flex-grow: 1;*/
+    /*margin-bottom: auto;*/
+/*}*/
+
+.blog .main {
+    background-color: #eee;
+}
+
+.blog .card-blog {
+    background-color: #fff;
+    opacity: 1;
+}
+
+.blog .card-blog .card-image {
+    box-shadow: none;
+}
+
+.blog .card-blog .col-ms-7 {
+}
+
+.blog .card-blog .author {
+
+}
+
+.blog .card-blog .author .ath-gravatar {
+
+}
+.blog .card-blog .author .ath-name {
+    color: #9A9A9A;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-right: 8px;
+}
+.blog .card-blog .author .nb-of-comm {
+    color: #9A9A9A;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-right: 8px;
+}
+.blog .card-blog .author .nb-of-comm::before {
+    color: #9A9A9A;
+    content: "\f086";
+    font-family: FontAwesome;
+    margin-right: 3px;
+}
+.blog .card-blog .author .posted-date {
+    color: #9A9A9A;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.blog .card-blog .author .posted-date::before {
+    color: #9A9A9A;
+    content: "\f017";
+    font-family: FontAwesome;
+    margin-right: 3px;
+}
