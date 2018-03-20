@@ -7,6 +7,20 @@ Version: 1.0.0
 */
 
 /* ===== Home ===== */
+
+/*Carousel*/
+.home .carousel-inner .hestia-big-title-content .hestia-title{
+    font-size:52px;
+    font-weight:400;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.27);
+    margin:30px 0 15px;
+}
+
+.home .carousel-inner .hestia-big-title-content .sub-title{
+    font-size: 28px;
+    font-weight: 400;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.27);
+}
 /* Features */
 .home .btn-primary  {
     border-radius: 30px;
@@ -61,6 +75,10 @@ Version: 1.0.0
     color: #333;
 }
 
+.home .hestia-info a:hover .icon {
+    transform: none;
+}
+
 /* Testimonials */
 .hestia-testimonials .text-center .hestia-title {
     font-size: 36px;
@@ -81,12 +99,14 @@ Version: 1.0.0
     max-width: 40px;
     max-height: 40px;
     -webkit-box-shadow:none;
+    margin: 25px auto 0;
 }
 
 .hestia-testimonials .card-testimonial .card-avatar {
-    position: absolute;
-    top: 35px;
-    right: 300px;
+    margin: unset;
+    max-height: unset;
+    float: left;
+
 }
 
 .hestia-testimonials .card-testimonial .card-title {
@@ -101,10 +121,13 @@ Version: 1.0.0
     text-align: left;
 }
 
+.hestia-testimonials .card-avatar+.content {
+    margin-top: 0;
+}
+
 /*Testimonials box-shadow*/
 .home .hestia-testimonials-content .card {
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.3);
-    height: 190px;
     padding-left: 15px;
     padding-right: 10px;
 }
@@ -122,7 +145,9 @@ Version: 1.0.0
     font-size: 18px;
     font-weight:500;
 }
+
 /*Blog*/
+/*Font styles*/
 .home .hestia-blogs .text-center .hestia-title {
     font-size: 36px;
     font-weight: 400;
@@ -148,9 +173,29 @@ Version: 1.0.0
     text-shadow: 0 1px 3px rgba(0, 0, 0, 1);
 }
 
+/*Removing effects */
 .home .hestia-blog-content .content {
     transform: translateY(-100px);
 }
+
+.home a:not(.btn),
+.home a:not(.btn):hover,
+.hestia-blogs article .card-image img,
+.hestia-blogs article .card-image a:hover img {
+    transform: unset;
+}
+
+.home .card-plain  .content .category,
+.home .card-plain .content .blog-item-title-link {
+    padding-left:15px;
+}
+
+/*Adding opacity*/
+.home .hestia-blog-content .card-image a {
+    opacity: 0.8;
+    filter: alpha(opacity=100);
+}
+
 /*Products*/
 .home .hestia-shop-content .card-description,
 .home  .hestia-shop-content .card .category,
@@ -191,6 +236,19 @@ Version: 1.0.0
 
 .home .hestia-shop .price {
     text-align: center;
+}
+
+.home .shop-item:hover > .card > .card-image {
+    box-shadow:0 15px 35px -15px rgba(0, 0, 0, 0.5),
+    0 5px 25px 0 rgba(0, 0, 0, 0.12),
+    0 10px 10px -5px rgba(0, 0, 0, 0.2);
+    transform: unset;
+}
+
+.home .shop-item > .card > .card-image {
+    box-shadow:0 15px 35px -15px rgba(0, 0, 0, 0.5),
+    0 5px 25px 0 rgba(0, 0, 0, 0.12),
+    0 10px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
 /*Meet the team*/
@@ -381,6 +439,14 @@ Version: 1.0.0
     margin-top: unset !important;
 }
 
+.woocommerce-page .shop-sidebar-wrapper .shop-sidebar {
+    background-color: #f0f0f0;
+}
+
+.woocommerce .product:hover > .card > .card-image {
+    transform: unset;
+}
+
 /*=====Cart Page=====*/
 /*Cart Styles*/
 .woocommerce-cart .main .blog-post h1.hestia-title {
@@ -407,7 +473,6 @@ Version: 1.0.0
     color: #333;
 }
 
-
 /*Cart Total Styles*/
 .woocommerce-cart .main .cart_totals h2 {
     font-size: 22px;
@@ -418,14 +483,14 @@ Version: 1.0.0
     color: #333;
 }
 
- /*Removing shadows*/
+/*Removing shadows*/
 .woocommerce-cart .main .cart_totals  .checkout-button,
 .woocommerce-cart .main .cart_totals  .checkout-button:hover,
 .woocommerce-cart .main  .actions .button:hover,
 .woocommerce-cart .main .cart_totals .card-raised,
 .woocommerce-page .woocommerce a.button,
 .woocommerce-page .woocommerce .button.wc-backward:hover {
-   box-shadow: none;
+    box-shadow: none;
     -webkit-box-shadow: none;
 }
 
@@ -435,18 +500,32 @@ Version: 1.0.0
     border-radius: 30px;
 }
 
+.woocommerce-page .cart input[type="number"]{
+    border-radius: 30px;
+    border:2px solid #DCDCDC;
+}
+
+.blog-post .section-text .woocommerce-message,
+.blog-post .section-text .woocommerce-message a {
+    background-color: #a3e7fc;
+    color: #ffffff;
+}
+
+single-product.blog-post .woocommerce-message {
+    padding-bottom: 0;
+}
 /*======Removing boxed layout=====*/
- .main-raised {
+.main-raised {
     margin:0;
     box-shadow: none;
     border-radius: 0;
 }
 
- .card-product .card-image {
-     margin: 0;
- }
+.card-product .card-image {
+    margin: 0;
+}
 
- /*=====Pagination=====*/
+/*=====Pagination=====*/
 /*Circle around page number*/
 .woocommerce.woocommerce-page .woocommerce-pagination  ul li a,
 .blog a.page-numbers,
@@ -787,15 +866,10 @@ Version: 1.0.0
     text-transform: capitalize;
 }
 
-.blog-post .section-comments .comment .media-body p {
-    font-size: 16px;
-    line-height: 24px;
-    color: #555;
-}
-
-.blog-post .section-comments .comment:not(.parent){
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 30px;
+/*Bar separating comments*/
+.blog-post .section-comments .comment.depth-1 {
+    border-top: 1px solid #ddd;
+    padding-top: 30px;
 }
 
 /*Reply section*/
@@ -829,12 +903,7 @@ Version: 1.0.0
 }
 
 .woocommerce .blog-post .woocommerce-message a {
-    position: relative;
-    right: 1360px;
-    top: -6px;
-    border: 1px solid;
-    border-radius: 30px;
-    padding: 10px;
+    transform: translateX(-1375px);
 }
 
 .woocommerce.single-product .blog-post .col-md-12 >div[id^=product].product.type-product {
@@ -854,9 +923,12 @@ Version: 1.0.0
     margin: 30px 0 15px;
 }
 
-.blog-post .blog-sidebar,
-.blog-post .section-text .author.meta-in-content {
+.blog-post .single-post-wrap .meta-in-content {
     display: none;
+}
+
+.blog-post .single-post-wrap .title-in-content {
+    padding-bottom: 30px;
 }
 
 .blog-post .section-text p span {
@@ -868,28 +940,6 @@ Version: 1.0.0
 
 .blog-post .section-text p {
     width:80%;
-}
-
-/*Side social media*/
-.blog-post .section-blog-info .entry-social {
-    position: relative;
-    top: -300px;
-    left: 89px;
-    /*border-bottom: 1px solid #f0f0f0;*/
-    /*width: 58%;*/
-    padding-bottom: 15px;
-}
-
-.blog-post .section-blog-info .entry-categories {
-    position: relative;
-    top: -345px;
-    left: 700px;
-}
-
-.blog-post .section-blog-info .entry-tags {
-    position: relative;
-    top: -425px;
-    left: 700px;
 }
 
 /*Removing box-shadow effect on hover*/
@@ -938,8 +988,10 @@ Version: 1.0.0
 .blog-post .related-posts .blog-item-title-link {
     color: white;
     text-shadow:0 1px 3px rgba(0, 0, 0, 9.5);
-    position: relative;
-    top: -225px;
+}
+
+.blog-post .related-posts .content {
+    transform: translateY(-100px);
 }
 
 .blog-post .related-posts .card-blog {
@@ -956,6 +1008,7 @@ Version: 1.0.0
     opacity: 1;
 }
 
+
 /*Related posts fonts*/
 .blog-post .related-posts .hestia-title.text-center {
     color: #777;
@@ -971,11 +1024,11 @@ Version: 1.0.0
     box-shadow: none;
     -webkit-box-shadow: none;
 }
-/*=====Blog post=====*/
+/*=====Blog page=====*/
 /*Make side-bar disappear*/
-.blog .blog-sidebar {
-    display: none;
-}
+/*.blog .blog-sidebar {*/
+    /*display: none;*/
+/*}*/
 
 /*Shadow effect on every post*/
 .blog .main-raised {
@@ -1000,12 +1053,24 @@ Version: 1.0.0
 
 .blog .hestia-blogs article:nth-child(2n){
     position: relative;
-    left: 280px;
+    /*left: 280px;*/
+    left:50px;
 }
 
 .blog .hestia-blogs article:nth-child(2n-1){
     position: relative;
-    left: 0px;
+    /*left: 0px;*/
+    left: -260px;
+}
+/*=====Archives=====*/
+.archive .hestia-blogs article:nth-child(2n-1){
+    position: relative;
+    left: -260px;
+}
+
+.archives .hestia-blogs article:nth-child(2n){
+    position: relative;
+    left:120px;
 }
 
 /*=====Checkout page======*/
@@ -1023,11 +1088,14 @@ Version: 1.0.0
     font-weight: 300;
 }
 
-.woocommerce-checkout .form-row.place-order button.button.alt {
+.woocommerce-checkout .form-row.place-order button.button.alt,
+.woocommerce-checkout .form-row.form-row-last button.button {
     border-radius: 30px;
     box-shadow: none;
 }
-.woocommerce-checkout .form-row.place-order button.button.alt:hover {
+
+.woocommerce-checkout .form-row.place-order button.button.alt:hover,
+.woocommerce-checkout .form-row.form-row-last button.button:hover {
     box-shadow: none;
 }
 
@@ -1091,13 +1159,11 @@ Version: 1.0.0
     }
 
     .blog .hestia-blogs .blog-posts-wrap article .row {
-    word-wrap: break-word;
-    overflow: hidden;
-    max-height: 150px;
-    line-height: 1.2em;
+        word-wrap: break-word;
+        overflow: hidden;
+        max-height: 150px;
+        line-height: 1.2em;
     }
-
-
 }
 
 @media only screen  and (max-width:760px){
@@ -1105,6 +1171,14 @@ Version: 1.0.0
     .blog-post .related-posts .category.text-info a,
     .blog-post .related-posts .blog-item-title-link {
         top: -330px;
+    }
+
+    .blog-post .section-comments .comment ul.children {
+        border-left: 1px solid white;
+    }
+
+    .single-post.blog-post ul.children {
+        border-left: unset;
     }
 
     /*Blog page*/
@@ -1129,7 +1203,7 @@ Version: 1.0.0
         width: auto;
     }
 
-     .blog .hestia-blogs .card-image {
+    .blog .hestia-blogs .card-image {
         margin-right: -16px;
     }
 
@@ -1148,6 +1222,15 @@ Version: 1.0.0
     .woocommerce.archive .main.main-raised {
         margin: 0;
     }
+
+    .single-post.blog-post ul.children {
+        border-left: unset;
+    }
+
+    /*Single post page*/
+    .blog-post .related-posts .card-blog .blog-item-title-link {
+        font-size:20px;
+    }
 }
 
 @media only screen and (max-width: 320px){
@@ -1160,8 +1243,16 @@ Version: 1.0.0
         padding: unset;
     }
 
+    /*Single post page*/
+    .blog-post .related-posts .card-blog .blog-item-title-link {
+        font-size:20px;
+    }
+
     /*Cart page*/
     .woocommerce-cart .cart_totals .wc-proceed-to-checkout {
         word-break:keep-all;
+    }
+    .blog-post .related-posts .text-center .card.card-blog .card-image {
+        overflow: visible;
     }
 }
